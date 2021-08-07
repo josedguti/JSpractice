@@ -76,3 +76,7 @@ function getPrimeNum(n) {
   }
   
   // console.log(removeDuplicate(['a', 'b', 'b', 'a']));
+
+    fetch('https://swapi.dev/api/planets/2')
+    .then(res => res.json())
+    .then(data => console.log(data.climate))
